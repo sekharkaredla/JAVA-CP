@@ -1,5 +1,7 @@
 package com.sekhar.coding;
 
+import java.util.Arrays;
+
 public class GenericMains {
     /*
     This class serves the purpose of calling the solution classes with main function
@@ -103,13 +105,18 @@ public class GenericMains {
 //            {0, 1, 1, 1}};
 //        System.out.println(ratInAMaze.findPath(m));
 //    }
+//
+//    public static void main(String[] args) {
+//        StringPermutations stringPermutations = new StringPermutations();
+//        StringSubSequences stringSubSequences = new StringSubSequences();
+//        StringSubStrings stringSubStrings = new StringSubStrings();
+//        System.out.println(stringPermutations.getPermutations("abc"));
+//        System.out.println(stringSubSequences.getSubSequences("abc"));
+//        System.out.println(stringSubStrings.getSubStrings("abc"));
+//    }
 
     public static void main(String[] args) {
-        StringPermutations stringPermutations = new StringPermutations();
-        StringSubSequences stringSubSequences = new StringSubSequences();
-        StringSubStrings stringSubStrings = new StringSubStrings();
-        System.out.println(stringPermutations.getPermutations("abc"));
-        System.out.println(stringSubSequences.getSubSequences("abc"));
-        System.out.println(stringSubStrings.getSubStrings("abc"));
+        WordLadder wordLadder = new WordLadder();
+        System.out.println(wordLadder.ladderLength("hit", "cog", Arrays.asList("hot","dot","dog","lot","log", "cog")));
     }
 }
